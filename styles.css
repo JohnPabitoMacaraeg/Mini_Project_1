@@ -271,7 +271,7 @@ header {
 }
 
 /* Media Query for 360 x 740 Screen Size */
-@media only screen and (max-width: 360px) and (max-height: 740px) {
+@media only screen and (min-width: 340px) and (max-height: 740px) {
   body {
     padding-top: 60px;
     font-size: 14px;
@@ -338,6 +338,8 @@ header {
   align-items: center;
   width: 50%;
   padding: 1em;
+  line-height: 1.5;
+  font-size: 1.5rem;
 }
 
 .card-container {
@@ -374,9 +376,16 @@ header {
 }
 
 /* Make it fit and readable to smaller screen devices */
-@media (max-width: 767.98px) {
+@media (min-width: 340px) and (max-width: 1080px) {
   .carousel-inner .carousel-content {
-    font-size: 0.6rem;
+    font-size: calc(
+      0.6rem + 0.15vw
+    ); /* Responsive font size based on viewport width */
     margin: 0;
   }
+}
+/* Start of Tools Section */
+
+#Tools {
+  background-color: #10898d;
 }
