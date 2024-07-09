@@ -5,7 +5,7 @@ body {
   padding-top: 60px;
 }
 
-/* Start of Navigation Bar */
+/* Navigation Bar */
 .navbar {
   background: #032f3c;
 }
@@ -20,6 +20,10 @@ body {
   font-weight: bold;
   font-size: 2rem;
   font-style: italic;
+  color: white;
+}
+
+.navbar-brand:focus {
   color: white;
 }
 
@@ -50,7 +54,7 @@ body {
   border-color: white; /* Change the border color to white */
 }
 
-/* To Center Navigation Links */
+/* Center Navigation Links on Small Screens */
 @media (max-width: 767.98px) {
   .navbar-nav {
     justify-content: center;
@@ -59,9 +63,7 @@ body {
   }
 }
 
-/* End of Navigation Bar */
-
-/* Start of Header (Hero Section) */
+/* Header (Hero Section) */
 header {
   background: #10898d;
   padding: 2em 0;
@@ -107,9 +109,7 @@ header {
   margin: 0 5px;
 }
 
-/* End of Header (Hero Section) */
-
-/* Start of About Me Section */
+/* About Me Section */
 #About {
   position: relative;
   background: url("./images/web-dev.jpg") no-repeat center center/cover;
@@ -146,10 +146,7 @@ header {
   color: rgb(182, 56, 56);
 }
 
-/* End of About Me Section */
-
-/* Start of Education Section */
-
+/* Education Section */
 #Education .main-container {
   background: #10898d;
 }
@@ -186,9 +183,8 @@ header {
   justify-content: center;
   align-items: center;
 }
-/* End of Education Section */
 
-/* Start of the Skill Section */
+/* Skills Section */
 #Skills {
   position: relative;
   background: url("./images/Web-languages.jpg") no-repeat center center/cover;
@@ -248,16 +244,13 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
 .skills-container .item3 {
   grid-column: 1 / -1;
 }
-/* End of Skills Section */
 
-/* Start of Employment History Section */
-
+/* Employment History Section */
 #Employment .main-container {
   background: #10898d;
   position: relative;
@@ -277,9 +270,7 @@ header {
   height: 250px;
 }
 
-/* End of Employment History Section */
-
-/* To fit the website on a 360 x 740 screen size */
+/* Media Query for 360 x 740 Screen Size */
 @media only screen and (max-width: 360px) and (max-height: 740px) {
   body {
     padding-top: 60px;
@@ -334,4 +325,3 @@ header {
     width: 100%;
   }
 }
-/* End of Media Query for 360 x 740 */
