@@ -384,8 +384,109 @@ header {
     margin: 0;
   }
 }
-/* Start of Tools Section */
 
-#Tools {
+/* Start of Contact Section */
+
+#Contact {
   background-color: #10898d;
+  padding: 20px;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container .col-lg-6 {
+  flex: 1 1 100%;
+  margin-bottom: 20px;
+  overflow: hidden; /* Hide overflow by default */
+}
+
+.contact-container .title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.contact-container .title:hover {
+  color: #032f3c;
+}
+
+.contact-form #name:focus,
+.contact-form #email:focus,
+.contact-form #phone:focus,
+.contact-form #message:focus {
+  border: 3px solid rgb(182, 56, 56);
+  outline: none;
+  box-shadow: none;
+}
+
+.contact-container .btn {
+  color: white;
+  background-color: #10898d;
+  border: none;
+}
+
+.contact-container .btn:hover {
+  color: #10898d;
+  background-color: white;
+}
+
+.contact-content-container {
+  color: white;
+  overflow-y: auto; /* Enable vertical scroll */
+  max-height: 300px; /* Set a max-height to trigger overflow */
+}
+
+@media (min-width: 768px) {
+  .contact-container .col-lg-6 {
+    flex: 0 0 48%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact-container .title {
+    font-size: 2.5rem;
+  }
+
+  .contact-form textarea {
+    height: auto;
+  }
+}
+
+/* Footer */
+
+footer {
+  background-color: #032f3c;
+}
+
+.main-container .title {
+  color: white;
+  font-size: 2rem;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: cetner;
+  text-align: center;
+  gap: 1em;
+}
+
+.social-media a {
+  color: #10898d;
+}
+
+.social-media a:hover {
+  color: white;
+}
+
+.copyright {
+  margin-top: 2em;
+  margin-bottom: 0;
+  color: white;
 }
