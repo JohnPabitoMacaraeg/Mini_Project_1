@@ -325,3 +325,58 @@ header {
     width: 100%;
   }
 }
+
+/* Sample Projects Section */
+.carousel-inner .carousel-item .card {
+  height: 100%;
+  width: 50%;
+}
+
+.carousel-inner .carousel-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 1em;
+}
+
+.card-container {
+  display: flex;
+}
+
+.card-container .card {
+  margin: 5px;
+}
+
+.carousel-inner .card img {
+  border-radius: 0;
+  width: 100%;
+}
+
+#Projects {
+  position: relative;
+  background: url("./images/developer.jpg") no-repeat center center/cover;
+}
+
+#Projects .main-container {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+#Projects .container {
+  position: relative;
+  z-index: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #10898d;
+  opacity: 0.5;
+}
+
+/* Make it fit and readable to smaller screen devices */
+@media (max-width: 767.98px) {
+  .carousel-inner .carousel-content {
+    font-size: 0.6rem;
+    margin: 0;
+  }
+}
