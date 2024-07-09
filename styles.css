@@ -464,6 +464,10 @@ footer {
   background-color: #032f3c;
 }
 
+footer .main-container {
+  border-top: 5px solid rgb(182, 56, 56);
+}
+
 .main-container .title {
   color: white;
   font-size: 2rem;
