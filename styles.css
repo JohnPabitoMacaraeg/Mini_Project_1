@@ -20,6 +20,11 @@ body {
   font-weight: bold;
   font-size: 2rem;
   font-style: italic;
+  color: white;
+}
+
+#navbarNavAltMarkup .nav-link.active {
+  color: rgb(182, 56, 56);
 }
 
 .special-characters {
@@ -35,10 +40,6 @@ body {
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
   color: #10898d;
-}
-
-.container-fluid .navbar-brand {
-  color: white;
 }
 
 .container-fluid .navbar-brand:hover {
@@ -57,6 +58,7 @@ body {
     width: 100%;
   }
 }
+
 /* End of Navigation Bar */
 
 /* Start of Header (Hero Section) */
